@@ -1,0 +1,186 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    sans-serif;
+}
+
+/* ================= SCREENS ================= */
+#quiz-screen,
+#result-screen {
+  display: none;
+}
+
+section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #14532d, #052e16);
+}
+
+/* ================= MAIN CARD ================= */
+.center-container {
+  width: 90%;
+  max-width: 420px;
+  min-height: 50vh;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #facc15;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* ================= TEXT ================= */
+.ws-heading {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #14532d;
+  text-align: center;
+}
+
+h4 {
+  text-align: center;
+  font-weight: 500;
+  color: #3f6212;
+}
+
+.questions-container {
+  text-align: center;
+}
+
+#question-number {
+  display: inline-block;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #065f46;
+  margin-bottom: 6px;
+}
+
+#question-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* ================= OPTIONS ================= */
+#options-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.option-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background-color: #ffffff;
+  color: #1f2937;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.option-btn:hover {
+  background-color: #ecfeff;
+}
+
+/* ===== SELECTED OPTION ===== */
+.option-btn.selected {
+  background-color: #14532d;
+  color: #ffffff;
+  border-color: #052e16;
+  transform: scale(1.02);
+}
+
+/* ================= BUTTONS ================= */
+button {
+  border: none;
+  outline: none;
+}
+
+#start-btn,
+#next-btn,
+#restart-btn {
+  margin-top: 10px;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background-color: #dc2626;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* Hover */
+#start-btn:hover,
+#next-btn:hover,
+#restart-btn:hover {
+  background-color: #b91c1c;
+  transform: translateY(-2px);
+}
+
+/* Disabled state */
+#next-btn:disabled {
+  background-color: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ================= RESULT SCREEN ================= */
+.result-container {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #14532d;
+}
+
+.message-container {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 480px) {
+  .center-container {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .ws-heading {
+    font-size: 1.5rem;
+  }
+}
+
+/* ================= SIGNATURE ================= */
+.signature {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+
+  color: rgba(255, 255, 255, 0.7);
+  user-select: none;
+  pointer-events: none;
+  font-family: "Segoe Script", "Pacifico", cursive;
+  font-size: 0.9rem;
+
+
+}

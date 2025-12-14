@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Deen Tracker</title>
+    <link rel="stylesheet" href="src/styles/style.css" />
+  </head>
+  <body>
+    <!-- App Container -->
+    <div class="app-container">
+      <!-- Welcome Screen -->
+      <section id="welcome-screen">
+        <div class="center-container">
+          <h1 class="ws-heading">Daily Deen Tracker</h1>
+          <h4>Assalamualaikum , Check Your Today's Deen Level!</h4>
+          <button id="start-btn">Start</button>
+        </div>
+      </section>
+
+      <!-- Quiz Screen -->
+      <section id="quiz-screen">
+        <div class="center-container">
+          <div class="questions-container">
+            <span id="question-number">1</span>
+            <p id="question-text">Questions Here</p>
+          </div>
+          <div id="options-container">
+            <p class="options">Options Here</p>
+          </div>
+          <button id="next-btn">Next</button>
+        </div>
+      </section>
+
+      <!-- Result Screen -->
+      <section id="result-screen">
+        <div class="center-container">
+          <div class="result-container">
+            <p class="result"><span id="result">%</span></p>
+          </div>
+
+          <div class="message-container">
+            <h3 id="message">Message</h3>
+          </div>
+
+          <button id="restart-btn">Restart</button>
+        </div>
+      </section>
+    </div>
+
+    <div class="signature">Made by Talha .. v1.o</div>
+
+    <script src="src/data/questions.js"></script>
+    <script src="src/scripts/app.js"></script>
+  </body>
+</html>
