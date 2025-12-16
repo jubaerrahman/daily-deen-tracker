@@ -142,10 +142,14 @@ function goToNextQuestion() {
     resultPercent.textContent = percent + "%";
     message.textContent =
       percent >= 80
-        ? "Alhamdulillah brother ! May Allah's blessings be always with you.. "
+        ? "Mā shā' Allāh! May Allah accept your deeds and keep you consistent."
+        : percent >=60
+        ? "Alhamdulillah, brother! You're doing well—keep improving your ibādah."
         : percent >= 50
-        ? "Alhamdulillah brother ! Be more focused on your Deen .."
-        : "May you receive Hidayat soon .!";
+        ? "You're progressing—consistency will take you further, in shā' Allāh."
+        : percent >=45
+        ? "Brother, you're already regular with your salah—now try to deepen your commitment to the deen."
+        : "It's never too late to return. May Allah grant you hidāyah.";
 
     showResultScreen();
   }
