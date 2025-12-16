@@ -55,7 +55,7 @@ const questions = [
         type:"boolean",
         text:"Have you kept your good akhlaq today?(avoiding - anger,conflicts, disrespecting elders,rudeness to others,telling lie etc)",
         options:[true,false],
-        scoring:{true:5,false:0},
+        scoring:{true:5,false:-3},
         maxPoints:5
     },
     {
@@ -79,7 +79,7 @@ const questions = [
         type:"boolean",
         text:"Have you controlled your lust today?",
         options:[true,false],
-        scoring:{true:5,false:0},
+        scoring:{true:5,false:-5},
         maxPoints:5
     }
 ];
